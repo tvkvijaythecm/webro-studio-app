@@ -27,11 +27,11 @@ export function BottomNav() {
                     <span className="absolute inset-0 -z-10 gradient-bg-primary rounded-2xl opacity-90 shadow-glow animate-scale-in" />
                   )}
                   <Icon
-                    className={`h-5 w-5 transition-colors ${active ? "text-primary-foreground" : "text-muted-foreground"}`}
+                    className={`h-5 w-5 transition-colors ${active ? "text-primary-foreground" : "text-muted-foreground group-hover:text-primary"}`}
                     strokeWidth={active ? 2.5 : 2}
                   />
                   <span
-                    className={`text-[10px] font-medium transition-colors ${active ? "text-primary-foreground" : "text-muted-foreground"}`}
+                    className={`text-[10px] font-medium transition-colors ${active ? "text-primary-foreground" : "text-muted-foreground group-hover:text-primary"}`}
                   >
                     {label}
                   </span>

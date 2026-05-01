@@ -21,7 +21,7 @@ export function BottomNav() {
               <li key={to} className="flex-1">
                 <Link
                   to={to}
-                  className="tap-scale relative flex flex-col items-center gap-1 rounded-2xl px-2 py-2 transition-colors"
+                  className="tap-scale group relative flex flex-col items-center gap-1 rounded-2xl px-2 py-2 transition-all hover:bg-primary/10"
                 >
                   {active && (
                     <span className="absolute inset-0 -z-10 gradient-bg-primary rounded-2xl opacity-90 shadow-glow animate-scale-in" />

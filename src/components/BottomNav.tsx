@@ -24,14 +24,14 @@ export function BottomNav() {
                   className="tap-scale group relative flex flex-col items-center gap-1 rounded-2xl px-2 py-2 transition-all hover:bg-primary/10"
                 >
                   {active && (
-                    <span className="absolute inset-0 -z-10 gradient-bg-primary rounded-2xl opacity-90 shadow-glow animate-scale-in" />
+                    <span className="absolute inset-0 gradient-bg-primary rounded-2xl shadow-glow animate-scale-in" />
                   )}
                   <Icon
-                    className={`h-5 w-5 transition-colors ${active ? "text-primary-foreground" : "text-muted-foreground group-hover:text-primary"}`}
+                    className={`relative h-5 w-5 transition-colors ${active ? "text-primary-foreground" : "text-muted-foreground group-hover:text-primary"}`}
                     strokeWidth={active ? 2.5 : 2}
                   />
                   <span
-                    className={`text-[10px] font-medium transition-colors ${active ? "text-primary-foreground" : "text-muted-foreground group-hover:text-primary"}`}
+                    className={`relative text-[10px] font-medium transition-colors ${active ? "text-primary-foreground" : "text-muted-foreground group-hover:text-primary"}`}
                   >
                     {label}
                   </span>

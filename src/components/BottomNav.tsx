@@ -13,7 +13,7 @@ export function BottomNav() {
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-40 px-3 pb-3 pt-2 pointer-events-none">
-      <div className="glass mx-auto max-w-md rounded-3xl px-2 py-2 pointer-events-auto">
+      <div className="mx-auto max-w-md rounded-3xl border border-border bg-card px-2 py-2 pointer-events-auto shadow-soft">
         <ul className="flex items-center justify-around">
           {tabs.map(({ to, icon: Icon, label }) => {
             const active = path === to || (to === "/home" && path === "/home");

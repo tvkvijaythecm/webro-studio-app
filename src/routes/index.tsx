@@ -94,13 +94,21 @@ function Onboarding() {
       </div>
 
       <div className="flex items-center justify-between gap-3">
-        <button
-          onClick={() => setIndex((i) => Math.max(0, i - 1))}
-          disabled={index === 0}
-          className="rounded-full border border-border bg-card px-5 py-3 text-sm font-medium tap-scale disabled:opacity-0"
-        >
-          Back
-        </button>
+        {index === 0 ? (
+          <button
+            onClick={finish}
+            className="rounded-full border border-border bg-card px-5 py-3 text-sm font-medium tap-scale"
+          >
+            Skip
+          </button>
+        ) : (
+          <button
+            onClick={() => setIndex((i) => Math.max(0, i - 1))}
+            className="rounded-full border border-border bg-card px-5 py-3 text-sm font-medium tap-scale"
+          >
+            Back
+          </button>
+        )}
         {isLast ? (
           <button
             onClick={finish}
